@@ -30,3 +30,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# 내가 직접 추가하는 인텔리제이 핵심 제외 목록
+.idea/
+*.iml
+*.class
