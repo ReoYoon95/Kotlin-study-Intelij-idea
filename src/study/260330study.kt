@@ -1,4 +1,4 @@
-import com.sun.media.sound.EmergencySoundbank.toFloat
+package study
 
 fun main() {
     var a: Int = 123
@@ -7,7 +7,7 @@ fun main() {
 //    단 사용하기전에는 값이 할당되기만 하면 값을 할당 안해도 된다. 그래서 초기값을 할당해주지 않으면 오류가 발생한다.
 /*
 예시
-    fun main() {
+    fun study.main() {
         val name: String // 1. 선언만 함 (OK!)
 
         // println(name) // ❌ 에러! 아직 값이 없는데 쓰려고 하면 혼납니다.
@@ -83,7 +83,7 @@ fun main() {
     // 각 요소는 null로 초기화된다.
      nullArr[0] = 10 //nullArr의 첫 번째 요소를 10으로 변경한다.
     println(nullArr[1]) //nullArr의 두 번째 요소를 출력한다. null이 출력된다.
-    
+
 
 
 
