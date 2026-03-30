@@ -35,3 +35,7 @@ bin/
 .idea/
 *.iml
 *.class
+
+# 빌드 결과물 및 임시 파일 (미래 대비)
+/build/
+.gradle/
