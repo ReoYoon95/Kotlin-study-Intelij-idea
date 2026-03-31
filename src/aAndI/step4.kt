@@ -1,10 +1,13 @@
 package aAndI
 
 fun main() {
-    val inputa = readln().replace("a = ", "").toInt()
-    val inputb = readln().replace("b = ", "").toInt()
+//    val inputA = readln().replace("a = ", "").toInt()
+    val inputA = readln().removePrefix("a = ").toInt()
+//    val inputB = readln().replace("b = ", "").toInt()
+    val inputB = readln().removePrefix("a = ").toInt()
+//removePrefix("파라미터") 는 앞에 이 것이 있으면 지워줘 라는 함수임.
 
-    println(solution(inputa, inputb))
+    println(solution(inputA, inputB))
 }
 
 fun solution(a: Int, b: Int): Int {
