@@ -1,6 +1,10 @@
-package aAndI
+package aAndI.p1
+
+fun main() {
+    println(solution())
+}
 
 fun solution(): String {
-    var a: String = "Hello World!"
+    val a: String = "Hello World!"
     return a
 }
