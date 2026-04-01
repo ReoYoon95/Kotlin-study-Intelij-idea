@@ -1,4 +1,4 @@
-package aAndI
+package aAndI.p4
 
 fun main() {
 //    val inputA = readln().replace("a = ", "").toInt()
