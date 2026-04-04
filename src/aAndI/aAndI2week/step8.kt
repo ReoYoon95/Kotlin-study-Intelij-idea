@@ -1,4 +1,4 @@
-package aAndI.p8
+package aAndI.aAndI2week.p8
 
 fun main() {
     val inputA = readln().removePrefix("a = ").trim().toInt()
@@ -8,6 +8,6 @@ fun main() {
 
 fun solution(a: Int): Int {
     val result = if (a % 4 == 0 && (a % 100 != 0 || a % 400 == 0)) 1
-        else 0
+    else 0
     return result
 }

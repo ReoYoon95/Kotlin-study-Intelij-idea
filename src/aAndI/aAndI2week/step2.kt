@@ -1,4 +1,4 @@
-package aAndI.p2
+package aAndI.aAndI2week.p2
 
 fun main() {
     println(solution(readln()))

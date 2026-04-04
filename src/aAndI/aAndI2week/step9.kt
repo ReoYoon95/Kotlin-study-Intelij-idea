@@ -1,4 +1,4 @@
-package aAndI.p9
+package aAndI.aAndI2week.p9
 
 fun main() {
     val inputA = readln().removePrefix("a = ").trim().toInt()

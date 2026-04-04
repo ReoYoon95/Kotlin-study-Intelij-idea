@@ -1,21 +1,21 @@
-package study
+package study.mar30
 
 fun main() {
     var a: Int = 123
     println(a)
 //    코틀린은 변수에 값을 할당해줘야함. 그래서 초기값을 할당해주지 않으면 오류가 발생한다.
 //    단 사용하기전에는 값이 할당되기만 하면 값을 할당 안해도 된다. 그래서 초기값을 할당해주지 않으면 오류가 발생한다.
-/*
-예시
-    fun study.main() {
-        val name: String // 1. 선언만 함 (OK!)
+    /*
+    예시
+        fun study.main() {
+            val name: String // 1. 선언만 함 (OK!)
 
-        // println(name) // ❌ 에러! 아직 값이 없는데 쓰려고 하면 혼납니다.
+            // println(name) // ❌ 에러! 아직 값이 없는데 쓰려고 하면 혼납니다.
 
-        name = "Gemini"  // 2. 나중에 값을 넣음 (OK!)
-        println(name)    // 3. 이제 값이 있으니 사용 가능! (OK!)
-    }
- */
+            name = "Gemini"  // 2. 나중에 값을 넣음 (OK!)
+            println(name)    // 3. 이제 값이 있으니 사용 가능! (OK!)
+        }
+     */
 
 //// 기본 자료형들
 //    숫자형
@@ -27,9 +27,9 @@ fun main() {
 //    null 을 쓰고 싶으면 타입에 ?붙일것
 
     var intValue: Int = 1234
-    var longValue:Long = 1234L //롱의 경우에는 마지막에 L을 붙인다.
-    var intValueByHex:Int = 0x1af //16진수의 경우에는 0x를 앞에 붙이면된다
-    var intValueByBin:Int = 0b10110110 //2진수의 경우에는 0b를 앞에 붙이면된다
+    var longValue: Long = 1234L //롱의 경우에는 마지막에 L을 붙인다.
+    var intValueByHex: Int = 0x1af //16진수의 경우에는 0x를 앞에 붙이면된다
+    var intValueByBin: Int = 0b10110110 //2진수의 경우에는 0b를 앞에 붙이면된다
 
     var doubleValue: Double = 123.5 //    실수는 기본적으로 더블형으로 인식한다. 그래서 123.5는 double로 인식된다.
     var doubleValueWithExp: Double = 123.5e10 //지수 표현식도 가능하다.
@@ -64,11 +64,11 @@ fun main() {
     var intArr = arrayOf(1, 2, 3, 4, 5) //Int형 배열을 생성한다.
     val arr2: Array<Int> = arrayOf(1, 2, 3)
     //Int형 배열을 생성하는 또 다른 방법이다. val로 선언했지만 배열의 요소는 변경할 수 있다.
-     arr2[0] = 10 //arr2의 첫 번째 요소를 10으로 변경한다.
+    arr2[0] = 10 //arr2의 첫 번째 요소를 10으로 변경한다.
 
-     var intArr2: IntArray = intArrayOf(1, 2, 3, 4, 5)
+    var intArr2: IntArray = intArrayOf(1, 2, 3, 4, 5)
     //Int형 배열을 생성하는 또 다른 방법이다. IntArray는 기본형 배열로 더 효율적이다.
-     intArr2[0] = 10 //intArr2의 첫 번째 요소를 10으로 변경한다.
+    intArr2[0] = 10 //intArr2의 첫 번째 요소를 10으로 변경한다.
 
 //    Array<int> 와 IntArray의 차이
 //    Array<Int>는 참조형 배열로, 각 요소가 Int 객체로 저장된다.
@@ -81,10 +81,8 @@ fun main() {
     //Int형 요소를 5개 가지는 null로 초기화된 배열을 생성한다.
     // var nullArr : Array<Int?> = arrayOfNulls(5) 와 같은 효과를 가진다.
     // 각 요소는 null로 초기화된다.
-     nullArr[0] = 10 //nullArr의 첫 번째 요소를 10으로 변경한다.
+    nullArr[0] = 10 //nullArr의 첫 번째 요소를 10으로 변경한다.
     println(nullArr[1]) //nullArr의 두 번째 요소를 출력한다. null이 출력된다.
-
-
 
 
 }

@@ -1,4 +1,4 @@
-package aAndI.p4
+package aAndI.aAndI2week.p4
 
 fun main() {
 //    val inputA = readln().replace("a = ", "").toInt()

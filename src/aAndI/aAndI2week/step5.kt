@@ -1,4 +1,4 @@
-package aAndI.p5
+package aAndI.aAndI2week.p5
 
 fun main() {
     val inputA = readln().replace("a = ", "").toInt()

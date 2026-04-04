@@ -1,4 +1,4 @@
-package aAndI.p11
+package aAndI.aAndI2week.p11
 
 fun main() {
     val inputA = readln().trim()
