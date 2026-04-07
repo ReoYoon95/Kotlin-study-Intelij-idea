@@ -1,4 +1,4 @@
-package aAndI.aAndI3week
+package aAndI.aAndI3week.p2
 
 fun main() {
     println("배열을 입력하시오")
