@@ -1,39 +1,31 @@
-package study
+package study.apr04
 
 fun main() {
-//    val result = sum(3, 5)
-//    println(result)
-//    printSum(4,6)
-    var inputA = readln().trim()
-    var inputV = readln().trim()
-    println(solution1(listOf(1, 4, 1, 2, 4, 2, 4, 2, 3, 4, 4), 2))
 
-}
+    var a = 0
 
-fun sum(a : Int, b : Int) : Int {
-    return a + b
-}
-
-fun printSum(a: Int, b: Int) {
-    println("합계는 ${a + b}")
-}
-
-fun gugudan(a : Int): String {
-    var result :String = ""
-    for (i in 2..9) {
-        result += ("$a * $i = ${a * i}\n")}
-    return result
-}
-
-fun solution1(a: List<Int>, v: Int): Int {
-    var answer = 0
-    for (i in 0 .. a.size -1 ) {
-        if( a[i] == v) answer++
+    while (a < 5) {
+        println(a++) //후위연산자
     }
-    return answer
-}
 
-fun solution2(a: String, b: Int): Char {
-    var answer = a[b - 1]
-    return answer
+    while (a < 5) {
+        println(++a) //전위연산자
+    }
+
+    do {
+        println("이제 시작합니다. a : $a")
+        a++
+    } while (a < 5)
+
+    for (i in 0..9 step 3) { // 인덱스로 사용할 i 는 var등을 안붙여도됌. step은 몇칸씩 뛰어라.
+        print(i) //print는 줄바꿈이 없음.
+    }
+
+    for (i in 9 downTo 0 step 3) { // downTo은 위에서 아래로 내려가라.
+        print("현재 값은 $i 입니다. ")
+    }
+
+    for (i in 'a'..'e') {
+        print(i)
+    }
 }
