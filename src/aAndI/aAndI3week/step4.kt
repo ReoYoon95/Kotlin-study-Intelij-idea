@@ -32,3 +32,14 @@ fun solution1(N: Int): String {
     }
     return result.toString()
 }
+
+fun solution2(N: Int): String {
+    val result = StringBuilder()
+
+    for (i in 1..N) {
+        // j 루프 대신 repeat 함수를 사용합니다.
+        result.append("*".repeat(i)) // "*".repeat(i)는 별을 i번 반복한 하나의 문자열을 만듭니다.
+        result.append("\n")// 줄바꿈 추가
+    }
+    return result.toString()
+}
