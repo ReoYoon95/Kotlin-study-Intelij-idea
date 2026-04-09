@@ -1,4 +1,4 @@
-package aAndI.aAndI3week
+package aAndI.aAndI3week.p6
 
 fun main() {
     println("a값을 입력하시오: ")
