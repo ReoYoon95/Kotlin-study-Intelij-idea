@@ -5,19 +5,19 @@ fun main() {
     println(solution(inputA))
 }
 
-fun solution(N: Int): Int {
-    if (N == 0) return 0
-    var result : Int = 1
-    for (i in 1..N) {
+fun solution(n: Int): Int {
+    if (n == 0) return 0
+    var result: Int = 1
+    for (i in 1..n) {
         result *= i
     }
     return result
 }
 
-fun solutionRecursion(N: Int): Int {
+fun solutionRecursion(n: Int): Int {
     // 1. 기저 사례: N이 0이거나 1이면 1을 반환하고 끝낸다.
-    if (N <= 1) return 1
+    if (n <= 1) return 1
 
-    // 2. 재귀 단계: N * (N-1 팩토리얼)
-    return N * solutionRecursion(N - 1)
+    // 2. 재귀 단계: n * (N-1 팩토리얼)
+    return n * solutionRecursion(n - 1)
 }
