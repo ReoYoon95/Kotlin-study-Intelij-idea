@@ -9,8 +9,11 @@ fun solution(s: String): Boolean {
     for (i in s.indices) {
         if (s[i] == s[s.length - 1 - i]) result *= 1
         else result *= 0
+//        result *= if (s[i] == s[s.length - 1 - i]) 1  //이방식으로 할 수도 있음.
+//        else 0
     }
-    var answer = if (result == 1) true else false
+//    val answer = if (result == 1) true else false
+    val answer = result == 1 //위에 if문 불필요한 이유는 result == 1 이거 자체가 맞으면 참이고, 아니면 거짓이 답변되기에.
 
     return answer
 }
