@@ -20,12 +20,22 @@ fun solution(list_S: List<Int>): List<Int> {    //선택정렬
         val temp = list_S[i]
         list_S[i] = list_S[minIndex]
         list_S[minIndex] = temp
+
     }
     return list_S
 }
 
+fun solutionChoice(listS: List<Int>): List<Int> { //선택정렬 내가 만든것.
+    val listS = listS.toMutableList()
+    for (i in 0..listS.size - 2)
+        for (j in i + 1..listS.size - 1) {
+            if (listS[i] > listS[j])
+                listS[i] = listS[j].also { listS[j] = listS[i] }
+        }
+    return listS
+}
 
-/* kotlin */
+
 fun solution1(list_S: List<Int>): List<Int> {
     val list_S = list_S.toMutableList()
     quickSort(list_S, 0, list_S.size - 1)
