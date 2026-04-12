@@ -48,7 +48,7 @@ fun solution1(listX: List<Int>, k: Int): Int {
 }
 
 fun solution2(listX: List<Int>, k: Int): Int {
-    // 1. 범위를 벗어나면 즉시 리턴 (아주 잘하셨어요!)
+    // 1. 범위를 벗어나면 즉시 리턴
     if (k !in 1..listX.size) return 0
 
     // 2. 코틀린의 기본 정렬 사용 (실무 권장)
