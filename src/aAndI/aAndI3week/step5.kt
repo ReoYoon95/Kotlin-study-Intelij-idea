@@ -1,5 +1,4 @@
 package aAndI.aAndI3week.p5
-//계속 2번째 오답이 나옴.
 
 fun main() {
     println("a를 입력하시오: ")
