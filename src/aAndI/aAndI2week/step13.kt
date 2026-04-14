@@ -55,6 +55,19 @@ fun solution3(line: String): Boolean {
 //val isBad = badWords.any { chatMessage.contains(it) }
 //
 //println(isBad) // 출력: true
+//=====================================================
+//data class Product(val name: String, val stock: Int)
+//
+//val cart = listOf(
+//    Product("사과", 10),
+//    Product("포도", 0), // 품절!
+//    Product("배", 5)
+//)
+//
+//// 장바구니에 품절된 상품(stock이 0인 것)이 하나라도 있는가?
+//val hasOutOfStock = cart.any { it.stock == 0 }
+//
+//println(hasOutOfStock) // 결과: true
 
 
 // contains 는 단순히 ~~가 포함되어 있는지 한번 확인할떄 사용
