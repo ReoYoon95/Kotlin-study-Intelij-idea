@@ -7,11 +7,11 @@ fun main() {
 }
 
 fun solution(line: String): Boolean {
-    return if (line.contains(Regex("(DEBUG|INFO|WARN|ERROR)"))) {
-        true
-    } else {
-        false
-    }
+    if (line.contains("DEBUG")) return true
+    if (line.contains("INFO")) return true
+    if (line.contains("WARN")) return true
+    if (line.contains("ERROR")) return true
+    else return false
 }
 
 fun solution1(line: String): Boolean {
@@ -65,3 +65,13 @@ fun solution3(line: String): Boolean {
 // containMatchIn 은 이 정밀한 패턴중에 이게 있는지 확인할때 사용
 //단 regex와 같이 사용
 //regex.containsMatchIn(~~) 식으로 사용
+
+
+
+fun solution4(line: String): Boolean {
+    return if (line.contains(Regex("(DEBUG|INFO|WARN|ERROR)"))) {
+        true
+    } else {
+        false
+    }
+}
