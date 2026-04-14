@@ -1,7 +1,5 @@
 package aAndI.aAndI2week.p13
 
-import javax.management.Query.or
-
 fun main() {
 
 }
@@ -59,13 +57,10 @@ fun solution3(line: String): Boolean {
 //println(isBad) // 출력: true
 
 
-
-
 // contains 는 단순히 ~~가 포함되어 있는지 한번 확인할떄 사용
 // containMatchIn 은 이 정밀한 패턴중에 이게 있는지 확인할때 사용
 //단 regex와 같이 사용
 //regex.containsMatchIn(~~) 식으로 사용
-
 
 
 fun solution4(line: String): Boolean {
@@ -74,4 +69,9 @@ fun solution4(line: String): Boolean {
     } else {
         false
     }
+}
+
+fun solution5(line: String): Boolean {
+    val logPattern = Regex("DEBUG|INFO|WARN|ERROR")
+    return logPattern.containsMatchIn(line)
 }
